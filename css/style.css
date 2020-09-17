@@ -73,6 +73,6 @@ img{
 #dados{
     width: 100%;
 }
-h1{
-    text-shadow: white 1px 1px 2px;
+h1, h2{
+    color: white;
 }
