@@ -5,6 +5,8 @@ function escuro(){
     pg.style.color = "white";
     sd.style.color = "white";
     body.style.backgroundColor = "black";
+    HTMLButtonElement.style.color = "red";
+
    
 }
 function claro(){
@@ -19,7 +21,7 @@ function claro(){
 
 
 function calcular(){
-   
+
 
     var terreno = Number(document.getElementById("terreno").value);
     var largura = Number(document.getElementById("largura").value);
@@ -27,7 +29,11 @@ function calcular(){
     var valor= 0;
     var saida = document.getElementById("saida");
    
+    
     valor = terreno / (largura*comprimento);
-    saida.innerHTML = `Dadas as medidas o numero de lotes nesse terreno sera de : ${valor} lotes. `;
+    saida.innerHTML = `Dadas as medidas o numero de lotes nesse terreno sera de : ${valor.toFixed(0)} lotes. <br>
+    Cada lote contendo uma área de ${largura*comprimento} metros quadrados. `;
+    
+       
     
 }
