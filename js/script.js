@@ -25,16 +25,20 @@ function escuro(){
     let sd = document.getElementById("saida");
     let pg = document.getElementById("txt");
     let p = document.getElementsByTagName("p");
+    let cabeçalho = document.getElementById("header");
+    let rodape = document.getElementById("rodape");
+
+    cabeçalho.style.backgroundImage ="linear-gradient( to right, black,  red 45%, black )";
     for(let i=0; i < p.length; i++){
         p[i].style.color = "white";
     }
-    largura.style.backgroundColor = "MediumTurquoise";
-    terreno.style.backgroundColor = "MediumTurquoise";
-    comprimento.style.backgroundColor = "MediumTurquoise";
+    largura.style.backgroundColor = "SandyBrown";
+    terreno.style.backgroundColor = "SandyBrown";
+    comprimento.style.backgroundColor = "SandyBrown";
     pg.style.color = "white";
     sd.style.color = "white";
     body.style.backgroundColor = "black";
-
+    rodape.style.backgroundImage = "linear-gradient( to right, black,  red 45%, black )";
    
 }
 function claro(){
@@ -42,10 +46,16 @@ function claro(){
     let sd = document.getElementById("saida");
     let pg = document.getElementById("txt");
     let p = document.getElementsByTagName("p");
+    let cabeçalho = document.getElementById("header");
+    let rodape = document.getElementById("rodape");
+
+    
 
     for(let i=0; i < p.length; i++){
         p[i].style.color = "black";
     }
+    rodape.style.backgroundImage = "linear-gradient( to right, white,  blue 45%, white )";
+    cabeçalho.style.backgroundImage ="linear-gradient( to right, white,  blue 45%, white )";
     largura.style.backgroundColor = "white";
     comprimento.style.backgroundColor = "white";   
     terreno.style.backgroundColor = "white";
