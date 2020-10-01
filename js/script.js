@@ -27,11 +27,19 @@ function escuro(){
     let p = document.getElementsByTagName("p");
     let cabeçalho = document.getElementById("header");
     let rodape = document.getElementById("rodape");
+    let botao = document.getElementsByTagName("button");
 
-    cabeçalho.style.backgroundImage ="linear-gradient( to right, black,  red 45%, black )";
+    for(let pos=0; pos < botao.length; pos++){
+        botao[pos].style.color = "white";
+        botao[pos].style.backgroundColor = "red";
+    }
+
     for(let i=0; i < p.length; i++){
         p[i].style.color = "white";
     }
+
+    cabeçalho.style.backgroundImage ="linear-gradient( to right, black,  red 45%, black )";
+   
     largura.style.backgroundColor = "SandyBrown";
     terreno.style.backgroundColor = "SandyBrown";
     comprimento.style.backgroundColor = "SandyBrown";
@@ -48,7 +56,12 @@ function claro(){
     let p = document.getElementsByTagName("p");
     let cabeçalho = document.getElementById("header");
     let rodape = document.getElementById("rodape");
+    let botao = document.getElementsByTagName("button");
 
+    for(let pos=0; pos < botao.length; pos++){
+        botao[pos].style.color = "white";
+        botao[pos].style.backgroundColor = " rgb(55, 55, 139)";
+    }
     
 
     for(let i=0; i < p.length; i++){
