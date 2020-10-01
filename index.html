@@ -9,24 +9,35 @@
 </head>
 <body>
     
+    
+    <header id="header" class="container">
+        <div class="container"  id="hd">
+
+                <h1 id="h1"> Calculando lotes</h1>   
+                <img src="img/lote.jpg" alt="...">
+               
+       
+        </div>
+    </header>
+    
     <div id="fundo" class="container">
        
-        <header id="header" class="container">
-            <div class="container"  id="hd">
-            <h1 id="h1"> Calculando lotes</h1>   
-            <img src="img/lote.jpg" alt="...">
-         
-            </div>
-        </header>
+     
         <div class="container" id="dados">
-
-        <button id="preto" onclick="escuro()">Dark</button>
-        <button id="branco" onclick="claro()">Normal</button>
+           
+               
+                <button id="preto" onclick="escuro()">Dark</button>
+                <button id="branco" onclick="claro()">Normal</button>
             <div id="pagina">
                 <p id="txt">Buscando auxiliar contrutores criamos essa ferramenta obejtiva <br>
                 que vai desmembrar seu terreno em lotes expecificos em apenas tres passos:</p>
-                <input id="terreno" name="tamanho" type="number" placeholder="Tamanho do terreno"><br>
-                <input id="largura" name="largura" type="number"  placeholder="Largura do lote"><br>
+                <p>O primeiro passo para nosso calculo é <br>
+                     saber o tamanho do seu terreno em metros quadrados:</p>
+                <input id="terreno" name="tamanho" type="number" placeholder="Tamanho do terreno">
+                <p>Agora as medidas do lote começamos pela largura, <br>
+                     digite a largura desejada do lote em metros:</p>                </p>
+                <input id="largura" name="largura" type="number"  placeholder="Largura do lote">
+                <p>Entre com o comprimento do lote em metros:</p>
                 <input id="comprimento" name="comprimento" type="number" placeholder="Comprimento do lote">
             </div>
             <button id="calc" onclick="calcular()">Calcular</button>
@@ -37,7 +48,6 @@
         </div>
         <footer>
             <div class="container">
-
             <h2>Desenvolvido por Jean </h2>
             </div>
         </footer>

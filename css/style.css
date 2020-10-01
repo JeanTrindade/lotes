@@ -63,16 +63,20 @@ p{
     margin: 0;
 
 }
-img{
+img {
     width: 150px;
     height: 70px;
     border-radius: 6%;
     box-shadow:gray 2px 2px 3px;
     
 }
+
 #dados{
     width: 100%;
 }
 h1, h2{
     color: white;
+}
+#checkbox{
+    float: right;
 }
